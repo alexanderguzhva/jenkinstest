@@ -17,7 +17,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes 'Main-Class': 'com.infra.asdf.application.Main'
+        //attributes 'Main-Class': 'com.infra.asdf.application.Main'
     }
 }
 
@@ -29,7 +29,7 @@ test {
 }
 
 // for 'application' plugin
-mainClassName = 'com.infra.asdf.application.Main'
+//mainClassName = 'com.infra.asdf.application.Main'
 
 
 
