@@ -1,0 +1,36 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'findbugs'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile 'org.testng:testng:6.8.21'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.infra.asdf.application.Main'
+    }
+}
+
+test {
+    // enable TestNG support (default is JUnit)
+    useTestNG() {
+
+    }
+}
+
+// for 'application' plugin
+mainClassName = 'com.infra.asdf.application.Main'
+
+
+
+
