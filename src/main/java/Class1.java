@@ -3,7 +3,7 @@
  */
 public class Class1 {
     public String getSomeString() {
-        return "Yaaaaawn";
+        return "yawn";
     }
 
     public String getBark() {
